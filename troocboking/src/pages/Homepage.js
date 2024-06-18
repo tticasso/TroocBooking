@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import Header from "../components/Header";
-import Sidebar from "../components/Sidebar";
+import SideBarList from "../components/SideBarList";
 import { UilEstate, UilFavorite, UilPercentage, UilCoffee, UilBell, UilCog, UilSignout } from '@iconscout/react-unicons';
+import Sidebar from '../components/Sidebar';
 
 export default function Homepage() {
+    // Initialize selectedIndex to 0 to set the default selection to the first sidebar item
     const [selectedIndex, setSelectedIndex] = useState(0);
 
     const list = [
@@ -63,6 +65,7 @@ export default function Homepage() {
             <div className="w-1/6">
                 <Sidebar
                     list={list}
+                    selectedIndex={selectedIndex}
                     onSelect={setSelectedIndex}
                 />
             </div>
