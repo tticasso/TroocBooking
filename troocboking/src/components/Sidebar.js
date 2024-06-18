@@ -1,6 +1,6 @@
 import SidebarList from "./SideBarList";
 
-export default function Sidebar({ list, onSelect }) {
+export default function Sidebar({ list, selectedIndex, onSelect }) {
     return (
         <div className="w-full h-full bg-[#1C1B21]">
             <div className="w-full flex justify-center items-center">
@@ -14,7 +14,8 @@ export default function Sidebar({ list, onSelect }) {
             <div className="w-full mt-[30px]">
                 <SidebarList
                     list={list}
-                    onSelect={onSelect} />
+                    onSelect={onSelect}
+                    selectedIndex={selectedIndex} />
             </div>
         </div>
     );
