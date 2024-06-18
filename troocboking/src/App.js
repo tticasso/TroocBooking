@@ -1,9 +1,10 @@
 import './App.css';
+import Homepage from './pages/Homepage';
 
 function App() {
   return (
-    <div className="text-yellow-300">
-      Aloha, World!
+    <div className="w-screen h-screen bg-[#131217]">
+      <Homepage />
     </div>
   );
 }
