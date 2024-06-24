@@ -6,7 +6,7 @@ import Login from './components/Login';
 import Signup from './components/Signup'; 
 const App = () => {
     return (
-      <div className="w-screen h-screen bg-[#131217]">
+      <div className="w-screen h-auto bg-[#131217]">
         <Router>
             <Routes>
                 <Route path="/" element={<Homepage />} />

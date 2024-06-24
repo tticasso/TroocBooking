@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export default function SideBarList({ list, selectedIndex, onSelect }) {
+
     return (
         <div className="w-full flex justify-center">
             <div className="w-4/5 flex flex-col">

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Header from "../components/Header";
 import SideBarList from "../components/SideBarList";
+import Content from "../components/Content";
 import { UilEstate, UilFavorite, UilPercentage, UilCoffee, UilBell, UilCog, UilSignout } from '@iconscout/react-unicons';
 import Sidebar from '../components/Sidebar';
 
@@ -42,7 +43,7 @@ export default function Homepage() {
     const renderContent = () => {
         switch (selectedIndex) {
             case 0:
-                return <div className='text-white'>Home Content</div>;
+                return <Content />;
             case 1:
                 return <div>Favorites Content</div>;
             case 2:
@@ -71,7 +72,7 @@ export default function Homepage() {
             </div>
             <div className="w-5/6 pl-[23px]">
                 <Header />
-                <div>
+                <div className='w-full'>
                     {renderContent()}
                 </div>
             </div>

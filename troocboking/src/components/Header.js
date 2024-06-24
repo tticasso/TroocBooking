@@ -29,7 +29,7 @@ export default function Header() {
                 <input type="text" placeholder="Type to search" className="w-[400px] h-[50px] rounded-[20px] font-mono pl-[20px] bg-[#1C1B21] border-[1px] border-[#605F64] outline-none text-white" />
                 <div className="flex gap-[29px]">
                     {button.map((item, index) => (
-                        <button key={index} className="h-[50px] w-[100px] rounded-[20px] pl-[20px] pr-[20px] font-mono font-bold text-[16px] text-[#B4D429] bg-[#1C1B21] border-[1px] border-[#605F64] outline-none">{item.name}</button>
+                        <button key={index} className="h-[50px] w-[100px] rounded-[20px] pl-[20px] pr-[20px] font-mono font-bold text-[16px] text-[#ffffff] bg-[#1C1B21] border-[1px] border-[#605F64] outline-none">{item.name}</button>
                     ))}
                 </div>
                 <button className="hidden h-[70px] w-[200px] rounded-[20px] font-mono font-bold text-[24px] text-white bg-gradient-to-r from-[#B4D429] to-[#5D6E15] border-[1px] border-[#605F64] outline-none">
