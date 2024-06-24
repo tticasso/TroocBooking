@@ -77,7 +77,7 @@ export default function Signup(){
                     </form>
 
                     <p className="text-center text-gray-400 mt-4 italic">
-                        Already have an account ? <Link to="/signup" className="text-green-400 italic" style={{ color: "#B4D429" }}>Login here</Link>
+                        Already have an account ? <Link to="/login" className="text-green-400 italic" style={{ color: "#B4D429" }}>Login here</Link>
                     </p>
                 </div>
             </div>

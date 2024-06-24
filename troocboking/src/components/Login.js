@@ -11,7 +11,6 @@ export default function Login() {
                         src="https://th.bing.com/th/id/R.8047173487fae27e020e3416b25bea55?rik=YSzEALV6hH%2fTcQ&pid=ImgRaw&r=0"
                         alt="Mavka Movie Poster"
                         className="rounded-l-lg object-cover "
-                        
                     />
                 </div>
                 <div className="w-1/2 p-8 mt-20" >
