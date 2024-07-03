@@ -2,6 +2,7 @@ import React from 'react';
 import CustomCarousel from './Carousel';
 import FilmSlider from './FilmSlider';
 import FoodSlider from './FoodSlider';
+import Booking from './Booking';
 
 const images = [
     { id: 1, link: 'https://www.awn.com/sites/default/files/styles/original/public/image/attached/1057586-theforestcreatures-1280.jpg?itok=FjjqCntx' },
@@ -38,8 +39,8 @@ export default function Content() {
                     <FoodSlider />
                 </div>
             </div>
-            <div className='w-[calc(40%-25px)]'>
-
+            <div className='w-2/5 mt-[40px] px-[25px]'>
+                <Booking />
             </div>
         </div>
     );
