@@ -1,1286 +1,1281 @@
 {
-    "film": [
+  "film": [
+    {
+      "id": "1",
+      "title": "Despicable Me 4",
+      "director": "Chris Renaud",
+      "duration": "92 min",
+      "genre": [
+        "Cartoon",
+        "Comedic"
+      ],
+      "rate": 9.3,
+      "distributer ": "Universal Pictures",
+      "img": "https://upload.wikimedia.org/wikipedia/en/e/ed/Despicable_Me_4_Theatrical_Release_Poster.jpeg",
+      "slot": [
         {
-            "id": 1,
-            "title": "Despicable Me 4",
-            "director": "Chris Renaud",
-            "duration": "92 min",
-            "genre": [
-                "Cartoon",
-                "Comedic"
-            ],
-            "rate": 9.3,
-            "distributer ": "Universal Pictures",
-            "img": "https://upload.wikimedia.org/wikipedia/en/e/ed/Despicable_Me_4_Theatrical_Release_Poster.jpeg",
-            "slot": [
-                {
-                    "date": "10/7/2024",
-                    "time": "10:00",
-                    "seats": [
-                        {
-                            "seat": 1,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 2,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 3,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 4,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 5,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 6,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 7,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 8,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 9,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 10,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 11,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 12,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 13,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 14,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 15,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 16,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 17,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 18,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 19,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 20,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 21,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 22,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 23,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 24,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 25,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 26,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 27,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 28,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 29,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 30,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 31,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 32,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 33,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 34,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 35,
-                            "status": "booked"
-                        }
-                    ]
-                },
-                {
-                    "date": "11/7/2024",
-                    "time": "10:00",
-                    "seats": [
-                        {
-                            "seat": 1,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 2,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 3,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 4,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 5,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 6,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 7,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 8,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 9,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 10,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 11,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 12,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 13,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 14,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 15,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 16,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 17,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 18,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 19,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 20,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 21,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 22,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 23,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 24,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 25,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 26,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 27,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 28,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 29,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 30,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 31,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 32,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 33,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 34,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 35,
-                            "status": "booked"
-                        }
-                    ]
-                }
-            ]
+          "date": "10/7/2024",
+          "time": "10:00",
+          "seats": [
+            {
+              "seat": 1,
+              "status": "available"
+            },
+            {
+              "seat": 2,
+              "status": "available"
+            },
+            {
+              "seat": 3,
+              "status": "available"
+            },
+            {
+              "seat": 4,
+              "status": "available"
+            },
+            {
+              "seat": 5,
+              "status": "available"
+            },
+            {
+              "seat": 6,
+              "status": "available"
+            },
+            {
+              "seat": 7,
+              "status": "available"
+            },
+            {
+              "seat": 8,
+              "status": "available"
+            },
+            {
+              "seat": 9,
+              "status": "available"
+            },
+            {
+              "seat": 10,
+              "status": "available"
+            },
+            {
+              "seat": 11,
+              "status": "available"
+            },
+            {
+              "seat": 12,
+              "status": "available"
+            },
+            {
+              "seat": 13,
+              "status": "available"
+            },
+            {
+              "seat": 14,
+              "status": "available"
+            },
+            {
+              "seat": 15,
+              "status": "available"
+            },
+            {
+              "seat": 16,
+              "status": "available"
+            },
+            {
+              "seat": 17,
+              "status": "available"
+            },
+            {
+              "seat": 18,
+              "status": "available"
+            },
+            {
+              "seat": 19,
+              "status": "available"
+            },
+            {
+              "seat": 20,
+              "status": "available"
+            },
+            {
+              "seat": 21,
+              "status": "available"
+            },
+            {
+              "seat": 22,
+              "status": "available"
+            },
+            {
+              "seat": 23,
+              "status": "available"
+            },
+            {
+              "seat": 24,
+              "status": "available"
+            },
+            {
+              "seat": 25,
+              "status": "available"
+            },
+            {
+              "seat": 26,
+              "status": "available"
+            },
+            {
+              "seat": 27,
+              "status": "available"
+            },
+            {
+              "seat": 28,
+              "status": "available"
+            },
+            {
+              "seat": 29,
+              "status": "available"
+            },
+            {
+              "seat": 30,
+              "status": "available"
+            },
+            {
+              "seat": 31,
+              "status": "booked"
+            },
+            {
+              "seat": 32,
+              "status": "booked"
+            },
+            {
+              "seat": 33,
+              "status": "booked"
+            },
+            {
+              "seat": 34,
+              "status": "booked"
+            },
+            {
+              "seat": 35,
+              "status": "booked"
+            }
+          ]
         },
         {
-            "id": 2,
-            "title": "Inside Out 2",
-            "director": "Kelsey Mann",
-            "duration": "96 min",
-            "genre": [
-                "Cartoon",
-                "Comedic"
-            ],
-            "rate": 9.3,
-            "distributer ": "Universal Pictures",
-            "img": "https://upload.wikimedia.org/wikipedia/en/f/f7/Inside_Out_2_poster.jpg",
-            "slot": [
-                {
-                    "date": "10/7/2024",
-                    "time": "10:00",
-                    "seats": [
-                        {
-                            "seat": 1,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 2,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 3,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 4,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 5,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 6,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 7,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 8,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 9,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 10,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 11,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 12,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 13,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 14,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 15,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 16,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 17,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 18,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 19,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 20,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 21,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 22,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 23,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 24,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 25,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 26,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 27,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 28,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 29,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 30,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 31,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 32,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 33,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 34,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 35,
-                            "status": "booked"
-                        }
-                    ]
-                },
-                {
-                    "date": "11/7/2024",
-                    "time": "10:00",
-                    "seats": [
-                        {
-                            "seat": 1,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 2,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 3,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 4,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 5,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 6,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 7,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 8,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 9,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 10,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 11,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 12,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 13,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 14,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 15,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 16,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 17,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 18,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 19,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 20,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 21,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 22,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 23,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 24,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 25,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 26,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 27,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 28,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 29,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 30,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 31,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 32,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 33,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 34,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 35,
-                            "status": "booked"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 3,
-            "title": "How To Make Millions Before Grandma Dies",
-            "director": "Pat Boonnitipat",
-            "duration": "125 min",
-            "genre": [
-                "Drama",
-                "Family"
-            ],
-            "rate": 9.3,
-            "distributer ": "Universal Pictures",
-            "img": "https://m.media-amazon.com/images/M/MV5BNGY4N2M5YTktNGViZS00YmM1LWFlNGUtNWQxM2Y4NmE3ZWI1XkEyXkFqcGdeQXVyNzEyMTA5MTU@._V1_.jpg",
-            "slot": [
-                {
-                    "date": "10/7/2024",
-                    "time": "10:00",
-                    "seats": [
-                        {
-                            "seat": 1,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 2,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 3,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 4,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 5,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 6,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 7,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 8,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 9,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 10,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 11,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 12,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 13,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 14,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 15,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 16,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 17,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 18,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 19,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 20,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 21,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 22,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 23,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 24,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 25,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 26,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 27,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 28,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 29,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 30,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 31,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 32,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 33,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 34,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 35,
-                            "status": "booked"
-                        }
-                    ]
-                },
-                {
-                    "date": "11/7/2024",
-                    "time": "10:00",
-                    "seats": [
-                        {
-                            "seat": 1,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 2,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 3,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 4,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 5,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 6,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 7,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 8,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 9,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 10,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 11,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 12,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 13,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 14,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 15,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 16,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 17,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 18,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 19,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 20,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 21,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 22,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 23,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 24,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 25,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 26,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 27,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 28,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 29,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 30,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 31,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 32,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 33,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 34,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 35,
-                            "status": "booked"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "title": "Doraemon: Nobita's Earth Symphony",
-            "director": "Kazuaki Imait",
-            "duration": "115 min",
-            "genre": [
-                "Drama",
-                "Family"
-            ],
-            "rate": 7.0,
-            "distributer ": "Universal Pictures",
-            "img": "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/3/image/1800x/71252117777b696995f01934522c402d/d/r/drm24_-_poster.jpg",
-            "slot": [
-                {
-                    "date": "10/7/2024",
-                    "time": "10:00",
-                    "seats": [
-                        {
-                            "seat": 1,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 2,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 3,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 4,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 5,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 6,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 7,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 8,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 9,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 10,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 11,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 12,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 13,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 14,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 15,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 16,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 17,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 18,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 19,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 20,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 21,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 22,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 23,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 24,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 25,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 26,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 27,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 28,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 29,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 30,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 31,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 32,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 33,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 34,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 35,
-                            "status": "booked"
-                        }
-                    ]
-                },
-                {
-                    "date": "11/7/2024",
-                    "time": "10:00",
-                    "seats": [
-                        {
-                            "seat": 1,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 2,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 3,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 4,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 5,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 6,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 7,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 8,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 9,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 10,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 11,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 12,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 13,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 14,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 15,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 16,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 17,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 18,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 19,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 20,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 21,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 22,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 23,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 24,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 25,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 26,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 27,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 28,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 29,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 30,
-                            "status": "available"
-                        },
-                        {
-                            "seat": 31,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 32,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 33,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 34,
-                            "status": "booked"
-                        },
-                        {
-                            "seat": 35,
-                            "status": "booked"
-                        }
-                    ]
-                }
-            ]
+          "date": "11/7/2024",
+          "time": "10:00",
+          "seats": [
+            {
+              "seat": 1,
+              "status": "available"
+            },
+            {
+              "seat": 2,
+              "status": "available"
+            },
+            {
+              "seat": 3,
+              "status": "available"
+            },
+            {
+              "seat": 4,
+              "status": "available"
+            },
+            {
+              "seat": 5,
+              "status": "available"
+            },
+            {
+              "seat": 6,
+              "status": "available"
+            },
+            {
+              "seat": 7,
+              "status": "available"
+            },
+            {
+              "seat": 8,
+              "status": "available"
+            },
+            {
+              "seat": 9,
+              "status": "available"
+            },
+            {
+              "seat": 10,
+              "status": "available"
+            },
+            {
+              "seat": 11,
+              "status": "available"
+            },
+            {
+              "seat": 12,
+              "status": "available"
+            },
+            {
+              "seat": 13,
+              "status": "available"
+            },
+            {
+              "seat": 14,
+              "status": "available"
+            },
+            {
+              "seat": 15,
+              "status": "available"
+            },
+            {
+              "seat": 16,
+              "status": "available"
+            },
+            {
+              "seat": 17,
+              "status": "available"
+            },
+            {
+              "seat": 18,
+              "status": "available"
+            },
+            {
+              "seat": 19,
+              "status": "available"
+            },
+            {
+              "seat": 20,
+              "status": "available"
+            },
+            {
+              "seat": 21,
+              "status": "available"
+            },
+            {
+              "seat": 22,
+              "status": "available"
+            },
+            {
+              "seat": 23,
+              "status": "available"
+            },
+            {
+              "seat": 24,
+              "status": "available"
+            },
+            {
+              "seat": 25,
+              "status": "available"
+            },
+            {
+              "seat": 26,
+              "status": "available"
+            },
+            {
+              "seat": 27,
+              "status": "available"
+            },
+            {
+              "seat": 28,
+              "status": "available"
+            },
+            {
+              "seat": 29,
+              "status": "available"
+            },
+            {
+              "seat": 30,
+              "status": "available"
+            },
+            {
+              "seat": 31,
+              "status": "booked"
+            },
+            {
+              "seat": 32,
+              "status": "booked"
+            },
+            {
+              "seat": 33,
+              "status": "booked"
+            },
+            {
+              "seat": 34,
+              "status": "booked"
+            },
+            {
+              "seat": 35,
+              "status": "booked"
+            }
+          ]
         }
-    ],
-    "food": [
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Inside Out 2",
+      "director": "Kelsey Mann",
+      "duration": "96 min",
+      "genre": [
+        "Cartoon",
+        "Comedic"
+      ],
+      "rate": 9.3,
+      "distributer ": "Universal Pictures",
+      "img": "https://upload.wikimedia.org/wikipedia/en/f/f7/Inside_Out_2_poster.jpg",
+      "slot": [
         {
-            "id": 1,
-            "name": "Popcorn",
-            "price": 50,
-            "icon": "https://i.pinimg.com/originals/3c/1a/e7/3c1ae797efafc7257699de4234d9f508.png"
+          "date": "10/7/2024",
+          "time": "10:00",
+          "seats": [
+            {
+              "seat": 1,
+              "status": "available"
+            },
+            {
+              "seat": 2,
+              "status": "available"
+            },
+            {
+              "seat": 3,
+              "status": "available"
+            },
+            {
+              "seat": 4,
+              "status": "available"
+            },
+            {
+              "seat": 5,
+              "status": "available"
+            },
+            {
+              "seat": 6,
+              "status": "available"
+            },
+            {
+              "seat": 7,
+              "status": "available"
+            },
+            {
+              "seat": 8,
+              "status": "available"
+            },
+            {
+              "seat": 9,
+              "status": "available"
+            },
+            {
+              "seat": 10,
+              "status": "available"
+            },
+            {
+              "seat": 11,
+              "status": "available"
+            },
+            {
+              "seat": 12,
+              "status": "available"
+            },
+            {
+              "seat": 13,
+              "status": "available"
+            },
+            {
+              "seat": 14,
+              "status": "available"
+            },
+            {
+              "seat": 15,
+              "status": "available"
+            },
+            {
+              "seat": 16,
+              "status": "available"
+            },
+            {
+              "seat": 17,
+              "status": "available"
+            },
+            {
+              "seat": 18,
+              "status": "available"
+            },
+            {
+              "seat": 19,
+              "status": "available"
+            },
+            {
+              "seat": 20,
+              "status": "available"
+            },
+            {
+              "seat": 21,
+              "status": "available"
+            },
+            {
+              "seat": 22,
+              "status": "available"
+            },
+            {
+              "seat": 23,
+              "status": "available"
+            },
+            {
+              "seat": 24,
+              "status": "available"
+            },
+            {
+              "seat": 25,
+              "status": "available"
+            },
+            {
+              "seat": 26,
+              "status": "available"
+            },
+            {
+              "seat": 27,
+              "status": "available"
+            },
+            {
+              "seat": 28,
+              "status": "available"
+            },
+            {
+              "seat": 29,
+              "status": "available"
+            },
+            {
+              "seat": 30,
+              "status": "available"
+            },
+            {
+              "seat": 31,
+              "status": "booked"
+            },
+            {
+              "seat": 32,
+              "status": "booked"
+            },
+            {
+              "seat": 33,
+              "status": "booked"
+            },
+            {
+              "seat": 34,
+              "status": "booked"
+            },
+            {
+              "seat": 35,
+              "status": "booked"
+            }
+          ]
         },
         {
-            "id": 2,
-            "name": "Coke",
-            "price": 30,
-            "icon": "https://p7.hiclipart.com/preview/1019/539/615/coca-cola-zero-soft-drink-diet-coke-coca-cola.jpg"
-        },
-        {
-            "id": 3,
-            "name": "Hotdog",
-            "price": 70,
-            "icon": "https://www.flaticon.com/svg/static/icons/svg/1046/1046784.svg"
-        },
-        {
-            "id": 4,
-            "name": "Nacho",
-            "price": 60,
-            "icon": "https://www.flaticon.com/svg/static/icons/svg/1046/1046784.svg"
+          "date": "11/7/2024",
+          "time": "10:00",
+          "seats": [
+            {
+              "seat": 1,
+              "status": "available"
+            },
+            {
+              "seat": 2,
+              "status": "available"
+            },
+            {
+              "seat": 3,
+              "status": "available"
+            },
+            {
+              "seat": 4,
+              "status": "available"
+            },
+            {
+              "seat": 5,
+              "status": "available"
+            },
+            {
+              "seat": 6,
+              "status": "available"
+            },
+            {
+              "seat": 7,
+              "status": "available"
+            },
+            {
+              "seat": 8,
+              "status": "available"
+            },
+            {
+              "seat": 9,
+              "status": "available"
+            },
+            {
+              "seat": 10,
+              "status": "available"
+            },
+            {
+              "seat": 11,
+              "status": "available"
+            },
+            {
+              "seat": 12,
+              "status": "available"
+            },
+            {
+              "seat": 13,
+              "status": "available"
+            },
+            {
+              "seat": 14,
+              "status": "available"
+            },
+            {
+              "seat": 15,
+              "status": "available"
+            },
+            {
+              "seat": 16,
+              "status": "available"
+            },
+            {
+              "seat": 17,
+              "status": "available"
+            },
+            {
+              "seat": 18,
+              "status": "available"
+            },
+            {
+              "seat": 19,
+              "status": "available"
+            },
+            {
+              "seat": 20,
+              "status": "available"
+            },
+            {
+              "seat": 21,
+              "status": "available"
+            },
+            {
+              "seat": 22,
+              "status": "available"
+            },
+            {
+              "seat": 23,
+              "status": "available"
+            },
+            {
+              "seat": 24,
+              "status": "available"
+            },
+            {
+              "seat": 25,
+              "status": "available"
+            },
+            {
+              "seat": 26,
+              "status": "available"
+            },
+            {
+              "seat": 27,
+              "status": "available"
+            },
+            {
+              "seat": 28,
+              "status": "available"
+            },
+            {
+              "seat": 29,
+              "status": "available"
+            },
+            {
+              "seat": 30,
+              "status": "available"
+            },
+            {
+              "seat": 31,
+              "status": "booked"
+            },
+            {
+              "seat": 32,
+              "status": "booked"
+            },
+            {
+              "seat": 33,
+              "status": "booked"
+            },
+            {
+              "seat": 34,
+              "status": "booked"
+            },
+            {
+              "seat": 35,
+              "status": "booked"
+            }
+          ]
         }
-    ],
-    "user": [
+      ]
+    },
+    {
+      "id": "3",
+      "title": "How To Make Millions Before Grandma Dies",
+      "director": "Pat Boonnitipat",
+      "duration": "125 min",
+      "genre": [
+        "Drama",
+        "Family"
+      ],
+      "rate": 9.3,
+      "distributer ": "Universal Pictures",
+      "img": "https://m.media-amazon.com/images/M/MV5BNGY4N2M5YTktNGViZS00YmM1LWFlNGUtNWQxM2Y4NmE3ZWI1XkEyXkFqcGdeQXVyNzEyMTA5MTU@._V1_.jpg",
+      "slot": [
         {
-            "id": 1,
-            "username": "admin",
-            "password": "admin",
-            "role": "admin"
+          "date": "10/7/2024",
+          "time": "10:00",
+          "seats": [
+            {
+              "seat": 1,
+              "status": "available"
+            },
+            {
+              "seat": 2,
+              "status": "available"
+            },
+            {
+              "seat": 3,
+              "status": "available"
+            },
+            {
+              "seat": 4,
+              "status": "available"
+            },
+            {
+              "seat": 5,
+              "status": "available"
+            },
+            {
+              "seat": 6,
+              "status": "available"
+            },
+            {
+              "seat": 7,
+              "status": "available"
+            },
+            {
+              "seat": 8,
+              "status": "available"
+            },
+            {
+              "seat": 9,
+              "status": "available"
+            },
+            {
+              "seat": 10,
+              "status": "available"
+            },
+            {
+              "seat": 11,
+              "status": "available"
+            },
+            {
+              "seat": 12,
+              "status": "available"
+            },
+            {
+              "seat": 13,
+              "status": "available"
+            },
+            {
+              "seat": 14,
+              "status": "available"
+            },
+            {
+              "seat": 15,
+              "status": "available"
+            },
+            {
+              "seat": 16,
+              "status": "available"
+            },
+            {
+              "seat": 17,
+              "status": "available"
+            },
+            {
+              "seat": 18,
+              "status": "available"
+            },
+            {
+              "seat": 19,
+              "status": "available"
+            },
+            {
+              "seat": 20,
+              "status": "available"
+            },
+            {
+              "seat": 21,
+              "status": "available"
+            },
+            {
+              "seat": 22,
+              "status": "available"
+            },
+            {
+              "seat": 23,
+              "status": "available"
+            },
+            {
+              "seat": 24,
+              "status": "available"
+            },
+            {
+              "seat": 25,
+              "status": "available"
+            },
+            {
+              "seat": 26,
+              "status": "available"
+            },
+            {
+              "seat": 27,
+              "status": "available"
+            },
+            {
+              "seat": 28,
+              "status": "available"
+            },
+            {
+              "seat": 29,
+              "status": "available"
+            },
+            {
+              "seat": 30,
+              "status": "available"
+            },
+            {
+              "seat": 31,
+              "status": "booked"
+            },
+            {
+              "seat": 32,
+              "status": "booked"
+            },
+            {
+              "seat": 33,
+              "status": "booked"
+            },
+            {
+              "seat": 34,
+              "status": "booked"
+            },
+            {
+              "seat": 35,
+              "status": "booked"
+            }
+          ]
         },
         {
-            "id": 2,
-            "username": "user",
-            "password": "user",
-            "role": "user"
+          "date": "11/7/2024",
+          "time": "10:00",
+          "seats": [
+            {
+              "seat": 1,
+              "status": "available"
+            },
+            {
+              "seat": 2,
+              "status": "available"
+            },
+            {
+              "seat": 3,
+              "status": "available"
+            },
+            {
+              "seat": 4,
+              "status": "available"
+            },
+            {
+              "seat": 5,
+              "status": "available"
+            },
+            {
+              "seat": 6,
+              "status": "available"
+            },
+            {
+              "seat": 7,
+              "status": "available"
+            },
+            {
+              "seat": 8,
+              "status": "available"
+            },
+            {
+              "seat": 9,
+              "status": "available"
+            },
+            {
+              "seat": 10,
+              "status": "available"
+            },
+            {
+              "seat": 11,
+              "status": "available"
+            },
+            {
+              "seat": 12,
+              "status": "available"
+            },
+            {
+              "seat": 13,
+              "status": "available"
+            },
+            {
+              "seat": 14,
+              "status": "available"
+            },
+            {
+              "seat": 15,
+              "status": "available"
+            },
+            {
+              "seat": 16,
+              "status": "available"
+            },
+            {
+              "seat": 17,
+              "status": "available"
+            },
+            {
+              "seat": 18,
+              "status": "available"
+            },
+            {
+              "seat": 19,
+              "status": "available"
+            },
+            {
+              "seat": 20,
+              "status": "available"
+            },
+            {
+              "seat": 21,
+              "status": "available"
+            },
+            {
+              "seat": 22,
+              "status": "available"
+            },
+            {
+              "seat": 23,
+              "status": "available"
+            },
+            {
+              "seat": 24,
+              "status": "available"
+            },
+            {
+              "seat": 25,
+              "status": "available"
+            },
+            {
+              "seat": 26,
+              "status": "available"
+            },
+            {
+              "seat": 27,
+              "status": "available"
+            },
+            {
+              "seat": 28,
+              "status": "available"
+            },
+            {
+              "seat": 29,
+              "status": "available"
+            },
+            {
+              "seat": 30,
+              "status": "available"
+            },
+            {
+              "seat": 31,
+              "status": "booked"
+            },
+            {
+              "seat": 32,
+              "status": "booked"
+            },
+            {
+              "seat": 33,
+              "status": "booked"
+            },
+            {
+              "seat": 34,
+              "status": "booked"
+            },
+            {
+              "seat": 35,
+              "status": "booked"
+            }
+          ]
         }
-    ],
-    "slider": [
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Doraemon: Nobita's Earth Symphony",
+      "director": "Kazuaki Imait",
+      "duration": "115 min",
+      "genre": [
+        "Drama",
+        "Family"
+      ],
+      "rate": 7,
+      "distributer ": "Universal Pictures",
+      "img": "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/3/image/1800x/71252117777b696995f01934522c402d/d/r/drm24_-_poster.jpg",
+      "slot": [
         {
-            "id": 1,
-            "link": "https://www.awn.com/sites/default/files/styles/original/public/image/attached/1057586-theforestcreatures-1280.jpg?itok=FjjqCntx"
+          "date": "10/7/2024",
+          "time": "10:00",
+          "seats": [
+            {
+              "seat": 1,
+              "status": "available"
+            },
+            {
+              "seat": 2,
+              "status": "available"
+            },
+            {
+              "seat": 3,
+              "status": "available"
+            },
+            {
+              "seat": 4,
+              "status": "available"
+            },
+            {
+              "seat": 5,
+              "status": "available"
+            },
+            {
+              "seat": 6,
+              "status": "available"
+            },
+            {
+              "seat": 7,
+              "status": "available"
+            },
+            {
+              "seat": 8,
+              "status": "available"
+            },
+            {
+              "seat": 9,
+              "status": "available"
+            },
+            {
+              "seat": 10,
+              "status": "available"
+            },
+            {
+              "seat": 11,
+              "status": "available"
+            },
+            {
+              "seat": 12,
+              "status": "available"
+            },
+            {
+              "seat": 13,
+              "status": "available"
+            },
+            {
+              "seat": 14,
+              "status": "available"
+            },
+            {
+              "seat": 15,
+              "status": "available"
+            },
+            {
+              "seat": 16,
+              "status": "available"
+            },
+            {
+              "seat": 17,
+              "status": "available"
+            },
+            {
+              "seat": 18,
+              "status": "available"
+            },
+            {
+              "seat": 19,
+              "status": "available"
+            },
+            {
+              "seat": 20,
+              "status": "available"
+            },
+            {
+              "seat": 21,
+              "status": "available"
+            },
+            {
+              "seat": 22,
+              "status": "available"
+            },
+            {
+              "seat": 23,
+              "status": "available"
+            },
+            {
+              "seat": 24,
+              "status": "available"
+            },
+            {
+              "seat": 25,
+              "status": "available"
+            },
+            {
+              "seat": 26,
+              "status": "available"
+            },
+            {
+              "seat": 27,
+              "status": "available"
+            },
+            {
+              "seat": 28,
+              "status": "available"
+            },
+            {
+              "seat": 29,
+              "status": "available"
+            },
+            {
+              "seat": 30,
+              "status": "available"
+            },
+            {
+              "seat": 31,
+              "status": "booked"
+            },
+            {
+              "seat": 32,
+              "status": "booked"
+            },
+            {
+              "seat": 33,
+              "status": "booked"
+            },
+            {
+              "seat": 34,
+              "status": "booked"
+            },
+            {
+              "seat": 35,
+              "status": "booked"
+            }
+          ]
         },
         {
-            "id": 2,
-            "link": "https://resizing.flixster.com/IJsd_ffZ0nE_ZKofCKqv3J1ogfA=/fit-in/1152x864/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p26836820_k_h10_aa.jpg"
-        },
-        {
-            "id": 3,
-            "link": "https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/06/inside-out-2-pixar.jpg"
+          "date": "11/7/2024",
+          "time": "10:00",
+          "seats": [
+            {
+              "seat": 1,
+              "status": "available"
+            },
+            {
+              "seat": 2,
+              "status": "available"
+            },
+            {
+              "seat": 3,
+              "status": "available"
+            },
+            {
+              "seat": 4,
+              "status": "available"
+            },
+            {
+              "seat": 5,
+              "status": "available"
+            },
+            {
+              "seat": 6,
+              "status": "available"
+            },
+            {
+              "seat": 7,
+              "status": "available"
+            },
+            {
+              "seat": 8,
+              "status": "available"
+            },
+            {
+              "seat": 9,
+              "status": "available"
+            },
+            {
+              "seat": 10,
+              "status": "available"
+            },
+            {
+              "seat": 11,
+              "status": "available"
+            },
+            {
+              "seat": 12,
+              "status": "available"
+            },
+            {
+              "seat": 13,
+              "status": "available"
+            },
+            {
+              "seat": 14,
+              "status": "available"
+            },
+            {
+              "seat": 15,
+              "status": "available"
+            },
+            {
+              "seat": 16,
+              "status": "available"
+            },
+            {
+              "seat": 17,
+              "status": "available"
+            },
+            {
+              "seat": 18,
+              "status": "available"
+            },
+            {
+              "seat": 19,
+              "status": "available"
+            },
+            {
+              "seat": 20,
+              "status": "available"
+            },
+            {
+              "seat": 21,
+              "status": "available"
+            },
+            {
+              "seat": 22,
+              "status": "available"
+            },
+            {
+              "seat": 23,
+              "status": "available"
+            },
+            {
+              "seat": 24,
+              "status": "available"
+            },
+            {
+              "seat": 25,
+              "status": "available"
+            },
+            {
+              "seat": 26,
+              "status": "available"
+            },
+            {
+              "seat": 27,
+              "status": "available"
+            },
+            {
+              "seat": 28,
+              "status": "available"
+            },
+            {
+              "seat": 29,
+              "status": "available"
+            },
+            {
+              "seat": 30,
+              "status": "available"
+            },
+            {
+              "seat": 31,
+              "status": "booked"
+            },
+            {
+              "seat": 32,
+              "status": "booked"
+            },
+            {
+              "seat": 33,
+              "status": "booked"
+            },
+            {
+              "seat": 34,
+              "status": "booked"
+            },
+            {
+              "seat": 35,
+              "status": "booked"
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ],
+  "food": [
+    {
+      "id": "1",
+      "name": "Popcorn",
+      "price": 50,
+      "icon": "https://i.pinimg.com/originals/3c/1a/e7/3c1ae797efafc7257699de4234d9f508.png"
+    },
+    {
+      "id": "2",
+      "name": "Coke",
+      "price": 30,
+      "icon": "https://p7.hiclipart.com/preview/1019/539/615/coca-cola-zero-soft-drink-diet-coke-coca-cola.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Hotdog",
+      "price": 70,
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/1046/1046784.svg"
+    },
+    {
+      "id": "4",
+      "name": "Nacho",
+      "price": 60,
+      "icon": "https://www.flaticon.com/svg/static/icons/svg/1046/1046784.svg"
+    }
+  ],
+  "user": [
+    {
+      "id": "a847",
+      "email": "tungta2@gmail.com",
+      "fullName": "Ta Khanh Tung",
+      "password": "123456aa",
+      "role": "user"
+    }
+  ],
+  "slider": [
+    {
+      "id": "1",
+      "link": "https://www.awn.com/sites/default/files/styles/original/public/image/attached/1057586-theforestcreatures-1280.jpg?itok=FjjqCntx"
+    },
+    {
+      "id": "2",
+      "link": "https://resizing.flixster.com/IJsd_ffZ0nE_ZKofCKqv3J1ogfA=/fit-in/1152x864/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p26836820_k_h10_aa.jpg"
+    },
+    {
+      "id": "3",
+      "link": "https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/06/inside-out-2-pixar.jpg"
+    }
+  ]
 }
