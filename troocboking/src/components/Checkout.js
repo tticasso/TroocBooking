@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Checkout = ({ selectedSeats }) => {
+const Checkout = ({ selectedSeats, filmName }) => {
     const seatCount = selectedSeats.length;
     const ticketPrice = 75;
     const popcornPrice = 35;
@@ -14,7 +14,7 @@ const Checkout = ({ selectedSeats }) => {
             <div className="py-4">
                 <div className="flex justify-between">
                     <div>
-                        <p>The Mavka x{seatCount}</p>
+                        <p>{filmName} x{seatCount}</p>
                         <p className="text-sm text-gray-400">Seat: {selectedSeats.join(', ')}</p>
                     </div>
                     <p>${seatCount * ticketPrice}</p>

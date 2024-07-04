@@ -1,4 +1,4 @@
-// Carousel.js
+// FilmSlider.js
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -23,7 +23,7 @@ const responsive = {
     }
 };
 
-const FilmSlider = ({ movies }) => {
+const FilmSlider = ({ movies, onBookNow }) => {
     return (
         <div className='w-full'>
             <Carousel
@@ -37,13 +37,18 @@ const FilmSlider = ({ movies }) => {
                 {movies.map(movie => (
                     <div key={movie.id} className="p-2">
                         <div className="rounded-[20px] overflow-hidden border-[#59595C] border-[1px] cursor-pointer">
-                            <img src={movie.image} alt={movie.title} className="w-full h-48 object-cover" />
+                            <img src={movie.img} alt={movie.title} className="w-full h-48 object-cover" />
                             <div className="w-full text-white">
                                 <h3 className="px-[1px] text-lg font-bold text-center truncate">{movie.title}</h3>
                                 <p className="text-sm text-center truncate">{movie.description}</p>
                                 <p className="text-yellow-400 text-center">{'★'.repeat(movie.rating)}</p>
                                 <div className='w-full flex justify-center'>
-                                    <button className="my-2 px-5 py-2 bg-gradient-to-r from-[#B4D429] to-[#5D6E15] rounded-full font-mono">Book now</button>
+                                    <button
+                                        className="my-2 px-5 py-2 bg-gradient-to-r from-[#B4D429] to-[#5D6E15] rounded-full font-mono"
+                                        onClick={() => onBookNow(movie.id)}
+                                    >
+                                        Book now
+                                    </button>
                                 </div>
                             </div>
                         </div>
