@@ -34,10 +34,7 @@ export default function Homepage() {
             name: "Settings",
             icon: <UilCog size={24} color="#B4D429" />,
         },
-        {
-            name: "Log out",
-            icon: <UilSignout size={24} color="#B4D429" />,
-        },
+
     ];
 
     const renderContent = () => {
@@ -54,8 +51,6 @@ export default function Homepage() {
                 return <div>Notifications Content</div>;
             case 5:
                 return <div>Settings Content</div>;
-            case 6:
-                return <div>Log out Content</div>;
             default:
                 return <div>Select an item</div>;
         }
