@@ -1,6 +1,5 @@
 // Booking.js
 import React, { useState, useEffect } from 'react';
-import { UilSchedule } from '@iconscout/react-unicons';
 import Checkout from './Checkout';
 
 export default function Booking({ id }) {
@@ -9,18 +8,25 @@ export default function Booking({ id }) {
     const [seats, setSeats] = useState([]);
 
     useEffect(() => {
+        console.log(typeof id);
         if (id) {
+            console.log("đang vào đây");
             fetch(`http://localhost:9999/film`)
                 .then(response => response.json())
                 .then(data => {
-                    const movie = data.find(film => film.id === parseInt(id));  // Find movie by ID
+                    console.log(data);
+                    const movie = data.find(film => parseInt(film.id) === parseInt(id));  // Find movie by ID
                     if (movie) {
+                        console.log(movie);
                         setMovieDetails(movie);
                         setSelectedSlot(movie.slot[0]);  // Select the first slot by default
                         setSeats(movie.slot[0].seats);  // Set the seats for the first slot
+                    } else {
+                        console.log("data không có");
                     }
                 })
                 .catch(error => console.error(error));
+
         }
     }, [id]);
     console.log("alo" + movieDetails);
