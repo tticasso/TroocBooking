@@ -7,7 +7,9 @@ export default function Header() {
     const handleClick = () => {
         navigate('/login');
     };
+
     const isLoggedIn = localStorage.getItem('isLoggedIn');
+    const user = JSON.parse(localStorage.getItem('user'));
 
     const button = [
         {
@@ -23,7 +25,6 @@ export default function Header() {
             name: "Comedy"
         }
     ]
-
 
     return (
         <div className="w-full flex pt-[20px] gap-[29px]">
@@ -46,8 +47,8 @@ export default function Header() {
                 >
                     <img src="https://cdn.britannica.com/73/234573-050-8EE03E16/Cristiano-Ronaldo-ceremony-rename-airport-Santa-Cruz-Madeira-Portugal-March-29-2017.jpg" alt="user" className="w-[30px] h-[30px] rounded-full" />
                     <div style={{ cursor: 'pointer' }}>
-                        <p className="text-[11px] font-mono font-bold">Cristiano Ronaldo</p>
-                        <p className="text-[9px] font-mono text-[#605F64] text-left">cr7@gmail.com</p>
+                        <p className="text-[11px] font-mono font-bold">{user.fullName}</p>
+                        <p className="text-[9px] font-mono text-[#605F64] text-left">{user.email}</p>
                     </div>
                 </button>
             ) : null}
