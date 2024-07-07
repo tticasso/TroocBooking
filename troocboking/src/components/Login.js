@@ -21,7 +21,7 @@ export default function Login() {
         return "";
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         const validationError = validateForm();
         if (validationError) {
@@ -29,36 +29,30 @@ export default function Login() {
             return;
         }
 
-        // Prepare data for API call
-        const postData = {
-            email: formData.email,
-            password: formData.password
-        };
+        try {
+            // Fetch users from the API
+            const response = await fetch('http://localhost:9999/user');
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const users = await response.json();
 
-        // Example fetch call to authenticate user
-        fetch('http://localhost:9999/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(postData),
-        })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                console.log('Success:', data);
-                // Optionally handle success response
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                // Handle errors
-            });
-        localStorage.setItem('isLoggedIn', true);
-        window.location.href = '/'; 
+            // Check if user exists
+            const user = users.find(u => u.email === formData.email && u.password === formData.password);
+            if (user) {
+                // Successful login
+                console.log('Login Success:', user);
+                localStorage.setItem('isLoggedIn', true);
+                localStorage.setItem('user', JSON.stringify(user)); // Save user info to localStorage
+                window.location.href = '/';
+            } else {
+                // User not found
+                setError('User does not exist.');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            setError('An error occurred while trying to log in.');
+        }
     };
 
     return (
