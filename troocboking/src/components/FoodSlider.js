@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { UilShoppingCart } from '@iconscout/react-unicons';
 
-const FoodSlider = () => {
+const FoodSlider = ({ addToCart, cartItems }) => {
     const [foodItems, setFoodItems] = useState([]);
 
     useEffect(() => {
@@ -10,6 +10,15 @@ const FoodSlider = () => {
             .then(data => setFoodItems(data))
             .catch(error => console.error('Error fetching food data:', error));
     }, []);
+
+    const handleAddToCart = (item) => {
+        const existingItem = cartItems.find(cartItem => cartItem.id === item.id);
+        if (existingItem) {
+            addToCart(existingItem.id); // Pass id of existing item to addToCart
+        } else {
+            addToCart(item); // Add new item to cart
+        }
+    };
 
     return (
         <div className="w-full flex flex-col items-center text-white py-8">
@@ -23,7 +32,8 @@ const FoodSlider = () => {
                         />
                         <h2 className="text-lg mb-1">{item.name}</h2>
                         <span className="text-xl font-bold mb-2">${item.price}</span>
-                        <button className="bg-gradient-to-r from-[#B4D429] to-[#5D6E15] font-bold font-mono flex justify-center items-center text-white px-4 py-2 rounded-full">
+                        <button className="bg-gradient-to-r from-[#B4D429] to-[#5D6E15] font-bold font-mono flex justify-center items-center text-white px-4 py-2 rounded-full"
+                            onClick={() => handleAddToCart(item)}>
                             <UilShoppingCart size="25" className="mr-2" />
                             Add to cart
                         </button>
