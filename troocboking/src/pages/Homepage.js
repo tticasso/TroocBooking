@@ -4,6 +4,7 @@ import SideBarList from "../components/SideBarList";
 import Content from "../components/Content";
 import { UilEstate, UilFavorite, UilPercentage, UilCoffee, UilBell, UilCog, UilSignout } from '@iconscout/react-unicons';
 import Sidebar from '../components/Sidebar';
+import Foodndrink from '../components/Foodndrink';
 
 export default function Homepage() {
     // Initialize selectedIndex to 0 to set the default selection to the first sidebar item
@@ -46,7 +47,7 @@ export default function Homepage() {
             case 2:
                 return <div>Bonus Content</div>;
             case 3:
-                return <div>Food and drink Content</div>;
+                return <Foodndrink/>
             case 4:
                 return <div>Notifications Content</div>;
             case 5:
