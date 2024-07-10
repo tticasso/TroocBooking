@@ -37,10 +37,13 @@ const Checkout = ({ selectedSeats, filmName, cartItems }) => {
         const foodTotal = items.reduce((total, item) => total + item.price * item.quantity, 0);
         return seatsTotal + foodTotal;
     };
+    const user = JSON.parse(localStorage.getItem('user'));
+    const userId = user.id;
 
     const handleSubmit = () => {
         // Prepare data to send to the API endpoint
         const orderData = {
+            userId: userId,
             filmName: filmName,
             selectedSeats: selectedSeats,
             items: items.map(item => ({
@@ -59,30 +62,24 @@ const Checkout = ({ selectedSeats, filmName, cartItems }) => {
             },
             body: JSON.stringify(orderData)
         })
-        .then(response => response.json())
-        .then(data => {
-            // Handle response if needed
-            console.log('Order placed successfully:', data);
-            // Optionally, reset cart items after successful order
-            setItems([]);
-        })
-        .catch(error => {
-            console.error('Error placing order:', error);
-        });
+            .then(response => response.json())
+            .then(data => {
+                // Handle response if needed
+                console.log('Order placed successfully:', data);
+                // Optionally, reset cart items after successful order
+                setItems([]);
+            })
+            .catch(error => {
+                console.error('Error placing order:', error);
+            });
     };
 
     // Function to consolidate items by name and sum their quantities
     const consolidateItems = () => {
-        const consolidatedItems = [];
-        items.forEach(item => {
-            const existingItem = consolidatedItems.find(ci => ci.name === item.name);
-            if (existingItem) {
-                existingItem.quantity += item.quantity;
-            } else {
-                consolidatedItems.push({ ...item });
-            }
-        });
-        return consolidatedItems;
+        return items.map(item => ({
+            ...item,
+            quantity: item.quantity || 1
+        }))
     };
 
     return (

@@ -12,12 +12,7 @@ const FoodSlider = ({ addToCart, cartItems }) => {
     }, []);
 
     const handleAddToCart = (item) => {
-        const existingItem = cartItems.find(cartItem => cartItem.id === item.id);
-        if (existingItem) {
-            addToCart(existingItem.id); // Pass id of existing item to addToCart
-        } else {
-            addToCart(item); // Add new item to cart
-        }
+        addToCart(item);
     };
 
     return (
