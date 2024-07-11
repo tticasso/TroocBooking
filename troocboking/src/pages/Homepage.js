@@ -2,9 +2,10 @@ import { useState } from 'react';
 import Header from "../components/Header";
 import SideBarList from "../components/SideBarList";
 import Content from "../components/Content";
-import { UilEstate, UilFavorite, UilPercentage, UilCoffee, UilBell, UilCog, UilSignout } from '@iconscout/react-unicons';
+import { UilEstate, UilFavorite, UilPercentage, UilCoffee, UilBell, UilCog, UilSignout, UilHistory } from '@iconscout/react-unicons';
 import Sidebar from '../components/Sidebar';
 import Foodndrink from '../components/Foodndrink';
+import History from '../components/History';
 
 export default function Homepage() {
     // Initialize selectedIndex to 0 to set the default selection to the first sidebar item
@@ -35,6 +36,10 @@ export default function Homepage() {
             name: "Settings",
             icon: <UilCog size={24} color="#B4D429" />,
         },
+        {
+            name: "History",
+            icon: <UilHistory size={24} color="#B4D429"/>
+        },
 
     ];
 
@@ -52,6 +57,8 @@ export default function Homepage() {
                 return <div>Notifications Content</div>;
             case 5:
                 return <div>Settings Content</div>;
+            case 6:
+                return <History/>
             default:
                 return <div>Select an item</div>;
         }

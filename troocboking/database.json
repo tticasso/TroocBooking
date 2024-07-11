@@ -1262,6 +1262,13 @@
       "fullName": "Ta Khanh Tung",
       "password": "123456aa",
       "role": "user"
+    },
+    {
+      "id": "ddc4",
+      "email": "gichigichigoo@gmail.com",
+      "fullName": "Lê Hoàng Lâm",
+      "password": "123456lam",
+      "role": "user"
     }
   ],
   "slider": [
@@ -1372,6 +1379,28 @@
         }
       ],
       "totalAmount": 660
+    },
+    {
+      "id": "e3e4",
+      "userId": "a847",
+      "filmName": "Despicable Me 4",
+      "selectedSeats": [
+        "A17",
+        "A18"
+      ],
+      "items": [],
+      "totalAmount": 150
+    },
+    {
+      "id": "e616",
+      "userId": "a847",
+      "filmName": "Despicable Me 4",
+      "selectedSeats": [
+        "A17",
+        "A18"
+      ],
+      "items": [],
+      "totalAmount": 150
     }
   ]
 }
