@@ -17,7 +17,7 @@ const Foodndrink = () => {
     }, []);
 
     return (
-        <div className='container'>
+        <div className=''>
             <div className='row'>
                 <div className='col-8'>
                     <div className="product-list">
