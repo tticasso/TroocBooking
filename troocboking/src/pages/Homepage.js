@@ -4,7 +4,7 @@ import SideBarList from "../components/SideBarList";
 import Content from "../components/Content";
 import { UilEstate, UilFavorite, UilPercentage, UilCoffee, UilBell, UilCog, UilSignout, UilHistory } from '@iconscout/react-unicons';
 import Sidebar from '../components/Sidebar';
-import Foodndrink from '../components/Foodndrink';
+import Foodndrink from '../components/FoodAndDrink';
 import History from '../components/History';
 
 export default function Homepage() {
@@ -33,14 +33,13 @@ export default function Homepage() {
             icon: <UilBell size={24} color="#B4D429" />,
         },
         {
-            name: "Settings",
-            icon: <UilCog size={24} color="#B4D429" />,
+            name: "History",
+            icon: <UilHistory size={24} color="#B4D429" />
         },
         {
-            name: "History",
-            icon: <UilHistory size={24} color="#B4D429"/>
-        },
-
+            name: "Settings",
+            icon: <UilCog size={24} color="#B4D429" />,
+        }
     ];
 
     const renderContent = () => {
@@ -52,13 +51,13 @@ export default function Homepage() {
             case 2:
                 return <div>Bonus Content</div>;
             case 3:
-                return <Foodndrink/>
+                return <Foodndrink />
             case 4:
                 return <div>Notifications Content</div>;
             case 5:
-                return <div>Settings Content</div>;
+                return <History />
             case 6:
-                return <History/>
+                return <div>Settings Content</div>;
             default:
                 return <div>Select an item</div>;
         }
