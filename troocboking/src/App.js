@@ -7,6 +7,7 @@ import Signup from './components/Signup';
 import LayoutPage from './components/admin/Dashboard';
 import UserManagement from './components/admin/UserManage';
 import FilmManage from './components/admin/FilmManage';
+import OrderManagement from './components/admin/OrderManage';
 const App = () => {
   return (
     <div className="w-screen h-auto bg-[#131217]">
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/admin" element={<LayoutPage />}>
             <Route path="user-manage" element={<UserManagement />} />
             <Route path="film-manage" element={<FilmManage />} />
+            <Route path="order-manage" element={<OrderManagement />} />
           </Route>
         </Routes>
       </Router>

@@ -43,7 +43,8 @@ export default function Signup() {
             email: formData.email,
             fullName: formData.fullName,
             password: formData.password,
-            role: "user"
+            role: "user",
+            status: true
         };
 
         // Example fetch call to post data to API

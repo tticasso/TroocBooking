@@ -1574,10 +1574,11 @@
   ],
   "user": [
     {
-      "dob": "2024-07-15T10:59:01.807Z",
       "email": "tungta2@gmail.com",
       "fullName": "Ta Khanh Tung",
-      "password": "123456yy",
+      "password": "123456aa",
+      "dob": "2024-07-15T10:59:01.807Z",
+      "status": true,
       "role": "admin",
       "id": "a847"
     },
@@ -1586,22 +1587,7 @@
       "email": "gichigichigoo@gmail.com",
       "fullName": "Lê Hoàng Lâm",
       "password": "123456lam",
-      "status": "true",
-      "role": "user"
-    },
-    {
-      "id": "dcee",
-      "email": "TungTKHE171025@fpt.edu.vn",
-      "fullName": "Ta Khanh Tung",
-      "password": "123456aa",
-      "status": "true",
-      "role": "admin"
-    },
-    {
-      "id": "16a6",
-      "email": "tungtk@gmail.com",
-      "fullName": "Ta Khanh Tung",
-      "password": "123123123",
+      "status": true,
       "role": "user"
     }
   ],
@@ -1621,6 +1607,7 @@
   ],
   "order": [
     {
+      "status": false,
       "id": "f0aa",
       "userId": "a847",
       "filmName": "Doraemon: Nobita's Earth Symphony",
@@ -1642,6 +1629,7 @@
       "id": "5b26",
       "userId": "a847",
       "filmName": "Inside Out 2",
+      "status": true,
       "selectedSeats": [
         "A1",
         "A2"
@@ -1665,6 +1653,7 @@
       "id": "39df",
       "userId": "a847",
       "filmName": "How To Make Millions Before Grandma Dies",
+      "status": true,
       "selectedSeats": [
         "A11",
         "A13"
