@@ -62,7 +62,6 @@ const FilmSlider = ({ movies, onBookNow }) => {
                             <img src={movie.img} alt={movie.title} className="w-full h-48 object-cover" />
                             <div className="w-full text-white">
                                 <h3 className="px-[1px] text-lg font-bold text-center truncate">{movie.title}</h3>
-                                <p className="text-sm text-center truncate">{movie.subtitle}</p>
                                 <p className="text-yellow-400 text-center">{'★'.repeat(movie.rate)}</p>
                                 <div className='w-full flex flex-col justify-center px-[10px]'>
                                     <button
