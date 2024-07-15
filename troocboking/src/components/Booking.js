@@ -34,9 +34,9 @@ export default function Booking({ id, cartItems }) {
       prevSeats.map((seat) =>
         seat.seat === seatId
           ? {
-              ...seat,
-              status: seat.status === "available" ? "your_choice" : "available",
-            }
+            ...seat,
+            status: seat.status === "available" ? "your_choice" : "available",
+          }
           : seat
       )
     );
@@ -45,16 +45,16 @@ export default function Booking({ id, cartItems }) {
 
   const getFillColor = (status) => {
     switch (status) {
-        case 'booked':
-            return '#4D4D4D';
-        case 'available':
-            return '#7F924A';
-        case 'your_choice':
-            return '#BBFC44';
-        default:
-            return '#D9D9D9';
+      case 'booked':
+        return '#4D4D4D';
+      case 'available':
+        return '#7F924A';
+      case 'your_choice':
+        return '#BBFC44';
+      default:
+        return '#D9D9D9';
     }
-};
+  };
 
   const selectedSeats = seats
     .filter((seat) => seat.status === "your_choice")
@@ -168,8 +168,10 @@ export default function Booking({ id, cartItems }) {
       <div className="w-full flex justify-center items-center mt-[20px]">
         <Checkout
           selectedSeats={selectedSeats}
+          selectedDate={selectedSlot.date}
           filmName={movieDetails.title}
           cartItems={cartItems}
+          filmId={id}
         />
       </div>
     </div>
