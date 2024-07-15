@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { UilUser, UilSignOutAlt } from '@iconscout/react-unicons';
-
+import dayjs from 'dayjs';
 export default function Header() {
     const navigate = useNavigate();
     const [showModal, setShowModal] = useState(false);
+    const [showProfile, setShowProfile] = useState(false);
+    const [showChangePassword, setShowChangePassword] = useState(false);
+    const [currentPassword, setCurrentPassword] = useState('');
+    const [newPassword, setNewPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const [message, setMessage] = useState('');
 
     const handleClick = () => {
         navigate('/login');
@@ -18,10 +24,46 @@ export default function Header() {
         setShowModal(!showModal);
     };
 
+    const handleProfile = () => {
+        setShowProfile(!showProfile);
+    };
+
     const handleLogout = () => {
         localStorage.removeItem('isLoggedIn');
         localStorage.removeItem('user');
         navigate('/');
+    };
+
+    const handleChangePassword = async () => {
+        if (newPassword !== confirmPassword) {
+            setMessage("Passwords do not match");
+            return;
+        }
+        const userId = JSON.parse(localStorage.getItem('user')).id;
+        try {
+            const response = await fetch(`http://localhost:9999/user/${userId}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    dob: JSON.parse(localStorage.getItem('user')).dob,
+                    email: JSON.parse(localStorage.getItem('user')).email,
+                    fullName: JSON.parse(localStorage.getItem('user')).fullName,
+                    password: newPassword,
+                    role: JSON.parse(localStorage.getItem('user')).role,
+                }),
+            });
+
+            if (response.ok) {
+                setMessage("Password changed successfully");
+            } else {
+                setMessage("Error changing password");
+            }
+        } catch (error) {
+            console.error("Error changing password:", error);
+            setMessage("Error changing password");
+        }
     };
 
     const isLoggedIn = localStorage.getItem('isLoggedIn');
@@ -74,8 +116,102 @@ export default function Header() {
                         </svg>
                     </button>
                     {showModal && (
-                        <div className="absolute right-0 mt-2 w-[200px] bg-[#1C1B21] flex justify-center items-center rounded-[10px] border-[1px] border-[#605F64] shadow-lg">
-                            <button onClick={handleLogout} className="h-[50px] flex justify-center items-center gap-[5px] text-white font-mono text-[16px]"> <UilSignOutAlt color='#B4D429' /> Log out</button>
+                        <div className='w-auto h-auto absolute right-0 bg-[1C1B21]'>
+                            <div className=" mt-2 w-[200px] bg-[#1C1B21] flex justify-center items-center rounded-[10px] border-[1px] border-[#605F64] shadow-lg">
+                                <button onClick={handleProfile} className="h-[50px] flex justify-center items-center gap-[5px] text-white font-mono text-[16px]"> <UilUser color='#B4D429' />Profile</button>
+                            </div>
+                            <div className=" mt-2 w-[200px] bg-[#1C1B21] flex justify-center items-center rounded-[10px] border-[1px] border-[#605F64] shadow-lg">
+                                <button onClick={handleLogout} className="h-[50px] flex justify-center items-center gap-[5px] text-white font-mono text-[16px]"> <UilSignOutAlt color='#B4D429' /> Log out</button>
+                            </div>
+                        </div>
+                    )}
+                    {showProfile && (
+                        <div className='absolute right-[-100px] top-[-20px] w-screen h-screen bg-black bg-opacity-[0.5] flex justify-center items-center z-10'>
+                            <div className='w-[800px] h-auto bg-[#1C1B21] rounded-[20px] p-[20px]'>
+                                <div className='w-full h-[50px] flex justify-between items-center'>
+                                    <p className='text-white font-mono text-[24px]'>Profile</p>
+                                    <button onClick={handleProfile} className='text-white font-mono text-[24px]'>x</button>
+                                </div>
+                                <div className='w-full h-auto flex flex-col gap-[10px]'>
+                                    <div className='flex flex-col'>
+                                        <label className='text-white font-mono text-[20px]'>Full Name</label>
+                                        <input
+                                            type="text"
+                                            value={user.fullName}
+                                            disabled
+                                            className='text-[#B4D429] font-mono text-[18px] bg-[#1C1B21] border-[1px] border-[#605F64] rounded-[10px] p-[10px]'
+                                        />
+                                    </div>
+                                    <div className='flex flex-col'>
+                                        <label className='text-white font-mono text-[20px]'>Email</label>
+                                        <input
+                                            type="text"
+                                            value={user.email}
+                                            disabled
+                                            className='text-[#B4D429] font-mono text-[18px] bg-[#1C1B21] border-[1px] border-[#605F64] rounded-[10px] p-[10px]'
+                                        />
+                                    </div>
+                                    <div className='flex flex-col'>
+                                        <label className='text-white font-mono text-[20px]'>Date of Birth</label>
+                                        <input
+                                            type="text"
+                                            value={dayjs(user.dob).format("DD/MM/YYYY")}
+                                            disabled
+                                            className='text-[#B4D429] font-mono text-[18px] bg-[#1C1B21] border-[1px] border-[#605F64] rounded-[10px] p-[10px]'
+                                        />
+                                    </div>
+                                    <button
+                                        onClick={() => setShowChangePassword(true)}
+                                        className='w-[200px] h-[50px] mt-[20px] text-white font-mono text-[20px] bg-gradient-to-r from-[#B4D429] to-[#5D6E15] rounded-[10px]'>
+                                        Change Password
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                    {showChangePassword && (
+                        <div className='absolute right-[-100px] top-[-20px] w-screen h-screen bg-black bg-opacity-[0.5] flex justify-center items-center z-20'>
+                            <div className='w-[500px] h-auto bg-[#1C1B21] rounded-[20px] p-[20px]'>
+                                <div className='w-full h-[50px] flex justify-between items-center'>
+                                    <p className='text-white font-mono text-[24px]'>Change Password</p>
+                                    <button onClick={() => setShowChangePassword(false)} className='text-white font-mono text-[24px]'>x</button>
+                                </div>
+                                <div className='w-full h-auto flex flex-col gap-[10px]'>
+                                    <div className='flex flex-col'>
+                                        <label className='text-white font-mono text-[20px]'>Current Password</label>
+                                        <input
+                                            type="password"
+                                            value={currentPassword}
+                                            onChange={(e) => setCurrentPassword(e.target.value)}
+                                            className='text-[#B4D429] font-mono text-[18px] bg-[#1C1B21] border-[1px] border-[#605F64] rounded-[10px] p-[10px]'
+                                        />
+                                    </div>
+                                    <div className='flex flex-col'>
+                                        <label className='text-white font-mono text-[20px]'>New Password</label>
+                                        <input
+                                            type="password"
+                                            value={newPassword}
+                                            onChange={(e) => setNewPassword(e.target.value)}
+                                            className='text-[#B4D429] font-mono text-[18px] bg-[#1C1B21] border-[1px] border-[#605F64] rounded-[10px] p-[10px]'
+                                        />
+                                    </div>
+                                    <div className='flex flex-col'>
+                                        <label className='text-white font-mono text-[20px]'>Confirm New Password</label>
+                                        <input
+                                            type="password"
+                                            value={confirmPassword}
+                                            onChange={(e) => setConfirmPassword(e.target.value)}
+                                            className='text-[#B4D429] font-mono text-[18px] bg-[#1C1B21] border-[1px] border-[#605F64] rounded-[10px] p-[10px]'
+                                        />
+                                    </div>
+                                    {message && <p className='text-red-500'>{message}</p>}
+                                    <button
+                                        onClick={handleChangePassword}
+                                        className='w-[200px] h-[50px] mt-[20px] text-white font-mono text-[20px] bg-gradient-to-r from-[#B4D429] to-[#5D6E15] rounded-[10px]'>
+                                        Save Password
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     )}
                 </div>
