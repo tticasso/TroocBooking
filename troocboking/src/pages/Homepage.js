@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import Header from "../components/Header";
-import SideBarList from "../components/SideBarList";
 import Content from "../components/Content";
-import { UilEstate, UilFavorite, UilPercentage, UilCoffee, UilBell, UilCog, UilSignout, UilHistory } from '@iconscout/react-unicons';
+import { UilEstate, UilCoffee, UilHistory } from '@iconscout/react-unicons';
 import Sidebar from '../components/Sidebar';
 import Foodndrink from '../components/FoodAndDrink';
 import History from '../components/History';
@@ -10,6 +9,7 @@ import History from '../components/History';
 export default function Homepage() {
 
     const [selectedIndex, setSelectedIndex] = useState(0);
+    const isLogged = localStorage.getItem('isLoggedIn');
 
     const list = [
         {
@@ -26,6 +26,15 @@ export default function Homepage() {
         }
     ];
 
+    const handleSelect = (index) => {
+        if (index === 2 && !isLogged) {
+            alert('Bạn cần phải đăng nhập');
+            window.location.href = '/login';
+        } else {
+            setSelectedIndex(index);
+        }
+    };
+
     const renderContent = () => {
         switch (selectedIndex) {
             case 0:
@@ -33,7 +42,7 @@ export default function Homepage() {
             case 1:
                 return <Foodndrink />;
             case 2:
-                return <History />
+                return <History />;
             default:
                 return <div>Select an item</div>;
         }
@@ -45,7 +54,7 @@ export default function Homepage() {
                 <Sidebar
                     list={list}
                     selectedIndex={selectedIndex}
-                    onSelect={setSelectedIndex}
+                    onSelect={handleSelect} // sử dụng handleSelect thay cho setSelectedIndex
                 />
             </div>
             <div className="w-5/6 pl-[23px]">
