@@ -13,6 +13,7 @@ const FoodSlider = ({ addToCart, cartItems }) => {
 
     const handleAddToCart = (item) => {
         addToCart(item);
+        alert(`${item.name} added to cart`);
     };
 
     return (
@@ -27,10 +28,9 @@ const FoodSlider = ({ addToCart, cartItems }) => {
                         />
                         <h2 className="text-lg mb-1">{item.name}</h2>
                         <span className="text-xl font-bold mb-2">${item.price}</span>
-                        <button className="bg-gradient-to-r from-[#B4D429] to-[#5D6E15] font-bold font-mono flex justify-center items-center text-white px-4 py-2 rounded-full"
+                        <button className="bg-gradient-to-r from-[#B4D429] to-[#5D6E15] font-bold font-mono flex justify-center items-center text-white px-[40px] py-2 rounded-full"
                             onClick={() => handleAddToCart(item)}>
-                            <UilShoppingCart size="25" className="mr-2" />
-                            Add to cart
+                            <UilShoppingCart size="25" />
                         </button>
                     </div>
                 ))}

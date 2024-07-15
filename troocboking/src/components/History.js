@@ -6,7 +6,7 @@ export default function History() {
 
     const [orders, setOrders] = useState([]);
     const [selectedOrder, setSelectedOrder] = useState(null);
-
+    console.log(orders);
     useEffect(() => {
         fetch('http://localhost:9999/order')
             .then(response => response.json())
@@ -21,19 +21,19 @@ export default function History() {
         <div className="w-full h-screen flex gap-[20px]">
             <div className="w-5/6 mt-[40px] gap-[25px] flex rounded-[20px] bg-[#1C1B21] mr-[40px]">
                 <div className="w-2/5 p-[10px]">
-                    <p className="font-mono text-white text-[20px] pb-[10px]">Booking History</p>
+                    <p className="font-bold font-mono text-[24px] text-[#B4D429]">Booking History</p>
                     {orders.map(order => (
                         <div
                             key={order.id}
-                            className="w-full mb-[20px] h-[80px] border-[2px] border-[#3E3D42] rounded-[20px] flex justify-between items-center px-[20px] text-white font-mono text-[20px] cursor-pointer"
+                            className="w-full mt-[20px] mb-[20px] h-[80px] border-[2px] border-[#3E3D42] rounded-[20px] flex justify-between items-center px-[20px] text-white font-mono text-[20px] cursor-pointer"
                             onClick={() => setSelectedOrder(order)}
                         >
-                            <div className='w-full'>
+                            <div className='w-2/3'>
                                 <p className='truncate'>{order.filmName}</p>
-                                <p>{Array.isArray(order.selectedSeats) ? order.selectedSeats.join(', ') : ''}</p>
+                                <p className='truncate'>{Array.isArray(order.selectedSeats) ? order.selectedSeats.join(', ') : ''}</p>
                             </div>
                             <div>
-                                {order.date}
+                                {order.selectedDate}
                             </div>
                         </div>
                     ))}
