@@ -17,13 +17,12 @@ import {
     Row,
     Col
 } from 'antd';
-
 import {
     PlusOutlined,
-    EyeOutlined,
     EditOutlined,
     SyncOutlined,
     SearchOutlined,
+    DeleteOutlined,
 } from '@ant-design/icons';
 import dayjs from 'dayjs';
 
@@ -34,7 +33,7 @@ const UserManagement = () => {
     const [form] = Form.useForm();
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [editingUser, setEditingUser] = useState(null);
-    const [searchTerm, setSearchTerm] = useState('');;
+    const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
         fetchUsers();
@@ -49,7 +48,6 @@ const UserManagement = () => {
             notification.error({ message: 'Error fetching users', description: error.message });
         }
     };
-
 
     const handleFormSubmit = async (values) => {
         try {
@@ -69,6 +67,7 @@ const UserManagement = () => {
             notification.error({ message: 'Error saving user', description: error.message });
         }
     };
+
     const handleEdit = (user) => {
         setEditingUser(user);
         setIsModalVisible(true);
@@ -78,7 +77,16 @@ const UserManagement = () => {
         });
     };
 
-
+    const handleDelete = async (userId) => {
+        try {
+            await axios.delete(`http://localhost:9999/user/${userId}`);
+            notification.success({ message: 'User deleted successfully' });
+            fetchUsers();
+        } catch (error) {
+            console.error('Error deleting user:', error);
+            notification.error({ message: 'Error deleting user', description: error.message });
+        }
+    };
 
     const columns = [
         {
@@ -120,10 +128,8 @@ const UserManagement = () => {
             key: 'role',
             width: 120,
             filters: [
-                { text: 'ADMIN', value: 'ADMIN' },
-                { text: 'MANAGER', value: 'MANAGER' },
-                { text: 'DOCTOR', value: 'DOCTOR' },
-                { text: 'PAITENT', value: 'PAITENT' },
+                { text: 'Admin', value: 'admin' },
+                { text: 'User', value: 'user' },
             ],
             onFilter: (value, record) => record.role === value,
             render: (role) => {
@@ -164,6 +170,7 @@ const UserManagement = () => {
             render: (text, record) => (
                 <Space size="middle">
                     <Button type="text" icon={<EditOutlined />} onClick={() => handleEdit(record)}></Button>
+                    <Button type="text" icon={<DeleteOutlined />} onClick={() => handleDelete(record.id)}></Button>
                 </Space>
             ),
         },
@@ -231,19 +238,28 @@ const UserManagement = () => {
                     >
                         <Input />
                     </Form.Item>
-                    {!editingUser && (
-                        <Form.Item
-                            name="password"
-                            label="Mật khẩu"
-                            rules={[{ required: true, message: 'Vui lòng điền mật khẩu' }]}
-                        >
-                            <Input.Password />
-                        </Form.Item>
-                    )}
+                    <Form.Item
+                        name="password"
+                        label="Mật khẩu"
+                        rules={[{ required: true, message: 'Vui lòng điền mật khẩu' }]}
+                    >
+                        <Input.Password />
+                    </Form.Item>
+
                     {editingUser && (
                         <>
                             <Form.Item name="dob" label="Ngày sinh">
                                 <DatePicker format="DD/MM/YYYY" />
+                            </Form.Item>
+                        </>
+                    )}
+                    {editingUser && (
+                        <>
+                            <Form.Item name="status" label="Trạng thái">
+                                <Select disabled={!editingUser}>
+                                    <Option value="true">Active</Option>
+                                    <Option value="false">Block</Option>
+                                </Select>
                             </Form.Item>
                         </>
                     )}
