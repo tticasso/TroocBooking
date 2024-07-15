@@ -45,6 +45,11 @@ export default function Login() {
                 localStorage.setItem('isLoggedIn', true);
                 localStorage.setItem('user', JSON.stringify(user)); // Save user info to localStorage
                 const role = user.role;
+                const status = user.status;
+                if (!status) {
+                    setError('Your account is inactive. Please contact the administrator.');
+                    return;
+                }
                 if (role === 'admin') {
                     window.location.href = '/admin';
                 } else {

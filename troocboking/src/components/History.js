@@ -42,7 +42,10 @@ export default function History() {
                 <div className="w-3/5 pt-[10px] flex justify-center">
                     {selectedOrder ? (
                         <div className="w-4/5">
-                            <p className="font-bold font-mono text-[24px] text-[#B4D429]">Booking ID: {selectedOrder.id}</p>
+                            <div className='w-full flex justify-between justify-items-center'>
+                                <p className="font-bold font-mono text-[24px] text-[#B4D429]">Booking ID: {selectedOrder.id}</p>
+                                <button className='p-[5px] bg-[#B4D429] rounded-[20px] text-white font-mono'>{selectedOrder.status ? 'Chưa sử dụng' : 'Đã sử dụng'}</button>
+                            </div>
                             <div className="flex w-full justify-between font-mono text-white text-[20px] mt-[20px]">
                                 <div className="">
                                     <p>{selectedOrder.filmName}</p>

@@ -48,6 +48,7 @@ const Checkout = ({ selectedSeats, filmName, cartItems, filmId, selectedDate }) 
             filmName: filmName,
             selectedSeats: selectedSeats,
             selectedDate: selectedDate,
+            status: true,
             items: items.map(item => ({
                 name: item.name,
                 quantity: item.quantity,
