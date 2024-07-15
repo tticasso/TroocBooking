@@ -62,7 +62,7 @@ const FilmSlider = ({ movies, onBookNow }) => {
                 infinite={true}
                 autoPlay={true}
                 autoPlaySpeed={3000}
-                arrows={true}
+                arrows={false}
                 className="carousel-wrapper"
             >
                 {movies.map(movie => (
