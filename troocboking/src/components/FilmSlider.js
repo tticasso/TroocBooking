@@ -30,6 +30,7 @@ const responsive = {
 
 const FilmSlider = ({ movies, onBookNow }) => {
     const [selectedMovie, setSelectedMovie] = useState(null);
+    const isLogged = localStorage.getItem('isLoggedIn');
 
     const fetchMovieDetails = async (id) => {
         try {
@@ -44,8 +45,16 @@ const FilmSlider = ({ movies, onBookNow }) => {
     const closeModal = () => {
         setSelectedMovie(null);
     };
-    console.log(selectedMovie);
 
+    const handleBookNow = (id) => {
+        if (!isLogged) {
+            alert('Bạn cần phải đăng nhập');
+            window.location.href = '/login';
+        } else {
+            onBookNow(id)
+            console.log(`Booking movie with id: ${id}`);
+        }
+    };
     return (
         <div className='w-full'>
             <Carousel
@@ -72,7 +81,7 @@ const FilmSlider = ({ movies, onBookNow }) => {
                                     </button>
                                     <button
                                         className="my-2 px-5 py-2 bg-gradient-to-r from-[#B4D429] to-[#5D6E15] rounded-full font-mono"
-                                        onClick={() => onBookNow(movie.id)}
+                                        onClick={() => handleBookNow(movie.id)}
                                     >
                                         Book now
                                     </button>
@@ -121,7 +130,7 @@ const FilmSlider = ({ movies, onBookNow }) => {
                                     </div>
                                     <div className=' flex items-center gap-[10px]'>
                                         <button className='w-[60px] h-[60px] flex justify-center items-center rounded-full border-[4px] border-white'>
-                                            <UilPlay size='40'/>
+                                            <UilPlay size='40' />
                                         </button>
                                         <p>Watch Trailer</p>
                                     </div>

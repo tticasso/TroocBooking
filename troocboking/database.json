@@ -1660,6 +1660,24 @@
         }
       ],
       "totalAmount": 250
+    },
+    {
+      "id": "39df",
+      "userId": "a847",
+      "filmName": "How To Make Millions Before Grandma Dies",
+      "selectedSeats": [
+        "A11",
+        "A13"
+      ],
+      "selectedDate": "10/7/2024",
+      "items": [
+        {
+          "name": "Large Popcorn",
+          "quantity": 1,
+          "price": 60
+        }
+      ],
+      "totalAmount": 210
     }
   ]
 }
