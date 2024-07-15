@@ -44,7 +44,12 @@ export default function Login() {
                 console.log('Login Success:', user);
                 localStorage.setItem('isLoggedIn', true);
                 localStorage.setItem('user', JSON.stringify(user)); // Save user info to localStorage
-                window.location.href = '/';
+                const role = user.role;
+                if (role === 'admin') {
+                    window.location.href = '/admin';
+                } else {
+                    window.location.href = '/';
+                }
             } else {
                 // User not found
                 setError('User does not exist.');
