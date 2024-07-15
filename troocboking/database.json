@@ -3,14 +3,16 @@
     {
       "id": "1",
       "title": "Despicable Me 4",
+      "subtitle": "The Rise of Gru",
       "director": "Chris Renaud",
       "duration": "92 min",
+      "overview": "The untold story of one twelve-year-old's dream to become the world's greatest supervillain.",
       "genre": [
         "Cartoon",
         "Comedic"
       ],
       "rate": 9.3,
-      "distributer ": "Universal Pictures",
+      "distributer": "Universal Pictures",
       "img": "https://upload.wikimedia.org/wikipedia/en/e/ed/Despicable_Me_4_Theatrical_Release_Poster.jpeg",
       "slot": [
         {
@@ -310,14 +312,16 @@
     {
       "id": "2",
       "title": "Inside Out 2",
+      "subtitle": "The Return of Joy",
       "director": "Kelsey Mann",
+      "overview": "The untold story of one twelve-year-old's dream to become the world's greatest supervillain.",
       "duration": "96 min",
       "genre": [
         "Cartoon",
         "Comedic"
       ],
       "rate": 9.3,
-      "distributer ": "Universal Pictures",
+      "distributer": "Universal Pictures",
       "img": "https://upload.wikimedia.org/wikipedia/en/f/f7/Inside_Out_2_poster.jpg",
       "slot": [
         {
@@ -617,6 +621,8 @@
     {
       "id": "3",
       "title": "How To Make Millions Before Grandma Dies",
+      "subtitle": "The Untold Story of One Twelve-Year-Old's Dream to Become the World's Greatest Supervillain",
+      "overview": "The untold story of one twelve-year-old's dream to become the world's greatest supervillain.",
       "director": "Pat Boonnitipat",
       "duration": "125 min",
       "genre": [
@@ -624,7 +630,7 @@
         "Family"
       ],
       "rate": 9.3,
-      "distributer ": "Universal Pictures",
+      "distributer": "Universal Pictures",
       "img": "https://m.media-amazon.com/images/M/MV5BNGY4N2M5YTktNGViZS00YmM1LWFlNGUtNWQxM2Y4NmE3ZWI1XkEyXkFqcGdeQXVyNzEyMTA5MTU@._V1_.jpg",
       "slot": [
         {
@@ -924,6 +930,8 @@
     {
       "id": "4",
       "title": "Doraemon: Nobita's Earth Symphony",
+      "subtitle": "The Untold Story of One Twelve-Year-Old's Dream to Become the World's Greatest Supervillain",
+      "overview": "The untold story of one twelve-year-old's dream to become the world's greatest supervillain.",
       "director": "Kazuaki Imait",
       "duration": "115 min",
       "genre": [
@@ -931,7 +939,7 @@
         "Family"
       ],
       "rate": 7,
-      "distributer ": "Universal Pictures",
+      "distributer": "Universal Pictures",
       "img": "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/3/image/1800x/71252117777b696995f01934522c402d/d/r/drm24_-_poster.jpg",
       "slot": [
         {
@@ -1244,13 +1252,13 @@
     },
     {
       "id": "3",
-      "name": "Hotdog",
+      "name": "Popcorn & Coke",
       "price": 70,
       "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdTFTPJ-X8Gzw5O0TQJ8GuM9SeFssgEnLiyQ&s"
     },
     {
       "id": "4",
-      "name": "Narutobaco",
+      "name": "Popcorn Large",
       "price": 60,
       "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIvcNvCkxSgLR-xb0sB8Q8lWjt1oW-POaNdg&s"
     }
@@ -1287,142 +1295,22 @@
   ],
   "order": [
     {
-      "id": "b207",
-      "filmId": "1",
-      "items": [
-        {
-          "id": "4",
-          "name": "Nacho",
-          "price": 60,
-          "icon": "https://www.flaticon.com/svg/static/icons/svg/1046/1046784.svg",
-          "quantity": 1
-        }
-      ],
-      "total": 60
-    },
-    {
-      "id": "c026",
-      "filmId": "3",
-      "items": [
-        {
-          "id": "4",
-          "name": "Nacho",
-          "price": 60,
-          "icon": "https://www.flaticon.com/svg/static/icons/svg/1046/1046784.svg",
-          "quantity": 1
-        },
-        {
-          "id": "3",
-          "name": "Hotdog",
-          "price": 70,
-          "icon": "https://www.flaticon.com/svg/static/icons/svg/1046/1046784.svg",
-          "quantity": 1
-        }
-      ],
-      "total": 130
-    },
-    {
-      "id": "cf18",
+      "id": "f0aa",
+      "userId": "a847",
       "filmName": "Doraemon: Nobita's Earth Symphony",
-      "selectedSeats": [
-        "A24",
-        "A25",
-        "A30"
-      ],
-      "items": [
-        {
-          "name": "Hotdog",
-          "quantity": 1,
-          "price": 70
-        },
-        {
-          "name": "Coke",
-          "quantity": 1,
-          "price": 30
-        },
-        {
-          "name": "Popcorn",
-          "quantity": 1,
-          "price": 50
-        },
-        {
-          "name": "Nacho",
-          "quantity": 1,
-          "price": 60
-        }
-      ],
-      "totalAmount": 435
-    },
-    {
-      "id": "f117",
-      "userId": "a847",
-      "filmName": "How To Make Millions Before Grandma Dies",
-      "selectedSeats": [
-        "A23",
-        "A24"
-      ],
-      "items": [
-        {
-          "name": "Nacho",
-          "quantity": 4,
-          "price": 60
-        },
-        {
-          "name": "Hotdog",
-          "quantity": 3,
-          "price": 70
-        },
-        {
-          "name": "Coke",
-          "quantity": 2,
-          "price": 30
-        }
-      ],
-      "totalAmount": 660
-    },
-    {
-      "id": "e3e4",
-      "userId": "a847",
-      "filmName": "Despicable Me 4",
       "selectedSeats": [
         "A17",
         "A18"
       ],
-      "items": [],
-      "totalAmount": 150
-    },
-    {
-      "id": "e616",
-      "userId": "a847",
-      "filmName": "Despicable Me 4",
-      "selectedSeats": [
-        "A17",
-        "A18"
-      ],
-      "items": [],
-      "totalAmount": 150
-    },
-    {
-      "id": "907b",
-      "userId": "a847",
-      "filmName": "Doraemon: Nobita's Earth Symphony",
-      "selectedSeats": [
-        "A2",
-        "A3"
-      ],
+      "selectedDate": "10/7/2024",
       "items": [
         {
-          "name": "Narutobaco",
+          "name": "Popcorn Large",
           "quantity": 1,
           "price": 60
-        },
-        {
-          "name": "Hotdog",
-          "quantity": 1,
-          "price": 70
         }
       ],
-      "totalAmount": 280
+      "totalAmount": 210
     }
   ]
 }
