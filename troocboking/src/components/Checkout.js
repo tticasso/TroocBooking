@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { UilPlus, UilMinus } from '@iconscout/react-unicons';
 
-const Checkout = ({ selectedSeats, filmName, cartItems }) => {
+const Checkout = ({ selectedSeats, filmName, cartItems, filmId, selectedDate }) => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
@@ -33,10 +33,11 @@ const Checkout = ({ selectedSeats, filmName, cartItems }) => {
     };
 
     const calculateSubtotal = () => {
-        const seatsTotal = selectedSeats.length * 75;
+        const seatsTotal = selectedSeats.length * 75; // Assuming seat price is $75
         const foodTotal = items.reduce((total, item) => total + item.price * item.quantity, 0);
         return seatsTotal + foodTotal;
     };
+
     const user = JSON.parse(localStorage.getItem('user'));
     const userId = user.id;
 
@@ -46,6 +47,7 @@ const Checkout = ({ selectedSeats, filmName, cartItems }) => {
             userId: userId,
             filmName: filmName,
             selectedSeats: selectedSeats,
+            selectedDate: selectedDate,
             items: items.map(item => ({
                 name: item.name,
                 quantity: item.quantity,
@@ -54,7 +56,7 @@ const Checkout = ({ selectedSeats, filmName, cartItems }) => {
             totalAmount: calculateSubtotal()
         };
 
-        // Call API endpoint (replace with actual API call)
+        // Call API endpoint to place order
         fetch('http://localhost:9999/order', {
             method: 'POST',
             headers: {
@@ -72,6 +74,9 @@ const Checkout = ({ selectedSeats, filmName, cartItems }) => {
             .catch(error => {
                 console.error('Error placing order:', error);
             });
+
+        alert('Order placed successfully!');
+        window.location.reload();
     };
 
     // Function to consolidate items by name and sum their quantities
@@ -79,7 +84,7 @@ const Checkout = ({ selectedSeats, filmName, cartItems }) => {
         return items.map(item => ({
             ...item,
             quantity: item.quantity || 1
-        }))
+        }));
     };
 
     return (

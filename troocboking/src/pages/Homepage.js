@@ -8,7 +8,7 @@ import Foodndrink from '../components/FoodAndDrink';
 import History from '../components/History';
 
 export default function Homepage() {
-    // Initialize selectedIndex to 0 to set the default selection to the first sidebar item
+
     const [selectedIndex, setSelectedIndex] = useState(0);
 
     const list = [
@@ -17,28 +17,12 @@ export default function Homepage() {
             icon: <UilEstate size={24} color="#B4D429" />,
         },
         {
-            name: "Favorites",
-            icon: <UilFavorite size={24} color="#B4D429" />,
-        },
-        {
-            name: "Bonus",
-            icon: <UilPercentage size={24} color="#B4D429" />,
-        },
-        {
             name: "Food and drink",
             icon: <UilCoffee size={24} color="#B4D429" />,
         },
         {
-            name: "Notifications",
-            icon: <UilBell size={24} color="#B4D429" />,
-        },
-        {
             name: "History",
             icon: <UilHistory size={24} color="#B4D429" />
-        },
-        {
-            name: "Settings",
-            icon: <UilCog size={24} color="#B4D429" />,
         }
     ];
 
@@ -47,17 +31,9 @@ export default function Homepage() {
             case 0:
                 return <Content />;
             case 1:
-                return <div>Favorites Content</div>;
+                return <Foodndrink />;
             case 2:
-                return <div>Bonus Content</div>;
-            case 3:
-                return <Foodndrink />
-            case 4:
-                return <div>Notifications Content</div>;
-            case 5:
                 return <History />
-            case 6:
-                return <div>Settings Content</div>;
             default:
                 return <div>Select an item</div>;
         }

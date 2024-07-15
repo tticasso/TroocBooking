@@ -54,7 +54,7 @@ export default function Content() {
                 <div className='w-full mt-[20px] mb-[20px]'>
                     <div className='w-full flex justify-between items-center'>
                         <p className='font-mono font-bold text-[20px] text-white'>Showing now</p>
-                        <a href='/#' className='font-mono text-[#B4D429] text-[16px]'>View all</a>
+                        <a href='/#' className='font-mono text-[#B4D429] text-[16px]'></a>
                     </div>
                     <FilmSlider movies={films} onBookNow={handleBookNow} />
                 </div>
