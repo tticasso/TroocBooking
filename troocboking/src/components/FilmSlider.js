@@ -49,7 +49,6 @@ const FilmSlider = ({ movies, onBookNow }) => {
     const handleBookNow = (id) => {
         if (!isLogged) {
             alert('Bạn cần phải đăng nhập');
-            window.location.href = '/login';
         } else {
             onBookNow(id)
             console.log(`Booking movie with id: ${id}`);

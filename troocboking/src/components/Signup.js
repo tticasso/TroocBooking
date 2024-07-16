@@ -43,6 +43,7 @@ export default function Signup() {
             email: formData.email,
             fullName: formData.fullName,
             password: formData.password,
+            dob: "2000-01-01",
             role: "user",
             status: true
         };

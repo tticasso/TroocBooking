@@ -5,6 +5,7 @@ import { UilEstate, UilCoffee, UilHistory } from '@iconscout/react-unicons';
 import Sidebar from '../components/Sidebar';
 import Foodndrink from '../components/FoodAndDrink';
 import History from '../components/History';
+import Footer from '../components/Footer';
 
 export default function Homepage() {
 
@@ -29,7 +30,6 @@ export default function Homepage() {
     const handleSelect = (index) => {
         if (index === 2 && !isLogged) {
             alert('Bạn cần phải đăng nhập');
-            window.location.href = '/login';
         } else {
             setSelectedIndex(index);
         }
@@ -49,20 +49,24 @@ export default function Homepage() {
     };
 
     return (
-        <div className="w-full h-full flex">
-            <div className="w-1/6">
-                <Sidebar
-                    list={list}
-                    selectedIndex={selectedIndex}
-                    onSelect={handleSelect} // sử dụng handleSelect thay cho setSelectedIndex
-                />
-            </div>
-            <div className="w-5/6 pl-[23px]">
-                <Header />
-                <div className='w-full'>
-                    {renderContent()}
+        <div className='w-full h-full'>
+            <div className="w-full h-full flex">
+                <div className="w-1/6">
+                    <Sidebar
+                        list={list}
+                        selectedIndex={selectedIndex}
+                        onSelect={handleSelect} // sử dụng handleSelect thay cho setSelectedIndex
+                    />
+                </div>
+                <div className="w-5/6 pl-[23px]">
+                    <Header />
+                    <div className='w-full'>
+                        {renderContent()}
+                    </div>
                 </div>
             </div>
+            <Footer />
         </div>
+
     );
 }

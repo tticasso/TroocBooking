@@ -16,7 +16,7 @@ const Foodndrink = () => {
             });
     }, []);
 
-    
+
     return (
         <div className='w-full h-screen'>
             <div className='w-full flex'>
@@ -40,8 +40,8 @@ const Foodndrink = () => {
                     </div>
                 </div>
                 <div className='w-2/5 p-[40px]'>
-                    <div className='w-full p-[20px] h-[300px] bg-[#1C1B21] rounded-[20px] text-white'>
-                        <p className='text-center font-mono'>Choose Film to check the seats</p>
+                    <div className="w-full h-[462px] flex justify-center bg-[#1C1B21] rounded-[20px] p-[20px] text-white">
+                        Choose Film to check the seats
                     </div>
                 </div>
             </div>
